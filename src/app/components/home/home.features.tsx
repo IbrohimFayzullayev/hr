@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { FaChartLine, FaFilter, FaUsers } from "react-icons/fa";
 
-const EmployerFeatures: React.FC = () => {
+const HomeFeatures: React.FC = () => {
   const { t } = useTranslation();
   return (
     <section className="py-16 px-[5%] bg-white text-center">
@@ -35,4 +35,4 @@ const EmployerFeatures: React.FC = () => {
   );
 };
 
-export default EmployerFeatures;
+export default HomeFeatures;

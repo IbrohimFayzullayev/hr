@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
-const EmployerHowItWorks: React.FC = () => {
+const HomeHowItWorks: React.FC = () => {
   const { t } = useTranslation();
 
   return (
@@ -59,4 +59,4 @@ const EmployerHowItWorks: React.FC = () => {
   );
 };
 
-export default EmployerHowItWorks;
+export default HomeHowItWorks;

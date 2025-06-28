@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
-const EmployerHero: React.FC = () => {
+const HomeHero: React.FC = () => {
   const { t } = useTranslation();
   return (
     <section className="flex items-center justify-between px-[5%] py-16 max-w-[1200px] mx-auto min-h-[80vh]">
@@ -57,4 +57,4 @@ const EmployerHero: React.FC = () => {
   );
 };
 
-export default EmployerHero;
+export default HomeHero;
