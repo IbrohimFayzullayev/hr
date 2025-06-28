@@ -13,20 +13,6 @@ const HomeHero: React.FC = () => {
         <p className="text-lg text-gray-600 mb-8">
           {t("employer_page_subtitle")}
         </p>
-        <div className="flex gap-4 mb-6">
-          <button
-            id="login-btn"
-            className="bg-blue-600 text-white py-3 px-6 rounded font-semibold transition hover:bg-blue-700"
-          >
-            {t("login")}
-          </button>
-          <button
-            id="register-btn"
-            className="bg-white text-blue-600 border-2 border-blue-600 py-3 px-6 rounded font-semibold transition hover:bg-blue-50"
-          >
-            {t("register")}
-          </button>
-        </div>
       </div>
 
       {/* O'ng tomon - illustratsiya */}
