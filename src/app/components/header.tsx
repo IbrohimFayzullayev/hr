@@ -10,7 +10,7 @@ const languages = [
 ];
 
 const Header: React.FC = () => {
-  const [activeLang, setActiveLang] = useState("ru");
+  const [activeLang, setActiveLang] = useState("en");
   const { i18n } = useTranslation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
