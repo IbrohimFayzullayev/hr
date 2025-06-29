@@ -13,6 +13,7 @@
     "axios": "^1.8.4",
     "clipboard-copy": "^4.0.1",
     "js-cookie": "^3.0.5",
+    "lucide-react": "^0.525.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-hot-toast": "^2.5.2",

@@ -1,72 +1,89 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { Linkedin, Twitter, Mail } from "lucide-react"; // yoki react-icons
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
+
   return (
-    <footer className="text-white bg-[#343a40] pt-12 pb-4 px-[5%]">
-      <div className="max-w-6xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
-        {/* Section 1 */}
+    <footer className="bg-gray-900 text-white px-[5%] py-12">
+      <div className="max-w-[1200px] mx-auto grid md:grid-cols-3 gap-10">
+        {/* Logo & Description */}
         <div>
-          <h3 className="text-xl font-semibold mb-2" data-i18n="appName">
-            {t("career_start")}
-          </h3>
-          <p>{t("career_start_description")}</p>
+          <h3 className="text-xl font-bold mb-4">HR AI</h3>
+          <p className="text-sm text-gray-300">
+            {t(
+              "footer_about",
+              "AI yordamida yollashni soddalashtiring va kompaniyangiz uchun eng mos nomzodlarni toping."
+            )}
+          </p>
         </div>
 
-        {/* Section 2 */}
+        {/* Links */}
         <div>
-          <h3 className="text-xl font-semibold mb-2">{t("quick_links")}</h3>
-          <ul className="space-y-2">
+          <h4 className="font-semibold text-lg mb-4">
+            {t("footer_links", "Quick Links")}
+          </h4>
+          <ul className="space-y-2 text-sm text-gray-300">
             <li>
-              <a
-                href="index.html"
-                data-i18n="home"
-                className="hover:text-primary transition"
-              >
-                {t("home")}
+              <a href="#features" className="hover:underline">
+                Features
               </a>
             </li>
             <li>
-              <a
-                href="#"
-                data-i18n="jobs"
-                className="hover:text-primary transition"
-              >
-                {t("jobs")}
+              <a href="#pricing" className="hover:underline">
+                Pricing
               </a>
             </li>
             <li>
-              <a
-                href="#"
-                data-i18n="companies"
-                className="hover:text-primary transition"
-              >
-                {t("companies")}
+              <a href="#demo" className="hover:underline">
+                Try Demo
               </a>
             </li>
             <li>
-              <a
-                href="#"
-                data-i18n="resources"
-                className="hover:text-primary transition"
-              >
-                {t("resources")}
+              <a href="#contact" className="hover:underline">
+                Contact
               </a>
             </li>
           </ul>
         </div>
 
-        {/* Section 3 */}
+        {/* Socials */}
         <div>
-          <h3 className="text-xl font-semibold mb-2">{t("contact")}</h3>
-          <p>{t("email")}: info@careerstart.com</p>
-          <p>{t("phone")}: (123) 456-7890</p>
+          <h4 className="font-semibold text-lg mb-4">
+            {t("footer_follow", "Follow us")}
+          </h4>
+          <div className="flex items-center space-x-4">
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              className="hover:text-blue-400"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="w-5 h-5" />
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              className="hover:text-blue-400"
+              aria-label="Twitter"
+            >
+              <Twitter className="w-5 h-5" />
+            </a>
+            <a
+              href="mailto:info@yaxshiishchi.uz"
+              className="hover:text-blue-400"
+              aria-label="Email"
+            >
+              <Mail className="w-5 h-5" />
+            </a>
+          </div>
         </div>
       </div>
 
-      <div className="border-t border-gray-300 py-4 text-center text-sm ">
-        <p data-i18n="footerText">{t("all_rights_reserved")}</p>
+      <div className="mt-10 text-center text-sm text-gray-500">
+        © {new Date().getFullYear()} HR AI.{" "}
+        {t("footer_rights", "All rights reserved.")}
       </div>
     </footer>
   );
