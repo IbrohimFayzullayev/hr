@@ -34,7 +34,7 @@ const Header: React.FC = () => {
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur shadow-sm">
       <div className="max-w-[1200px] mx-auto px-5 py-4 flex items-center justify-between">
         {/* Logo */}
-        <div className="text-xl font-bold text-blue-600">HR AI</div>
+        <div className="text-xl font-bold text-blue-600">TALAI</div>
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-8 text-sm">
