@@ -4,7 +4,7 @@ import WhyChooseUs from "../components/home/why.choose.us";
 import HowItWorks from "../components/home/how.it.works";
 import TryAIDemo from "../components/home/try.ai.demo";
 import Testimonials from "../components/home/testimonials";
-import PricingPlans from "../components/home/pricing.plans";
+// import PricingPlans from "../components/home/pricing.plans";
 import FAQSection from "../components/home/faq";
 import Hero from "../components/home/hero";
 
@@ -17,7 +17,7 @@ const HomeScreen = () => {
       <HowItWorks />
       <TryAIDemo />
       <Testimonials />
-      <PricingPlans />
+      {/* <PricingPlans /> */}
       <FAQSection />
       <Footer />
     </div>

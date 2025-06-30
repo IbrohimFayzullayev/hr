@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
       <div className="max-w-[1200px] mx-auto grid md:grid-cols-3 gap-10">
         {/* Logo & Description */}
         <div>
-          <h3 className="text-xl font-bold mb-4">HR AI</h3>
+          <h3 className="text-xl font-bold mb-4">TALAI</h3>
           <p className="text-sm text-gray-300">
             {t(
               "footer_about",
@@ -82,7 +82,7 @@ const Footer: React.FC = () => {
       </div>
 
       <div className="mt-10 text-center text-sm text-gray-500">
-        © {new Date().getFullYear()} HR AI.{" "}
+        © {new Date().getFullYear()} TALAI.{" "}
         {t("footer_rights", "All rights reserved.")}
       </div>
     </footer>
